@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo/LOGO.svg">
+    <title>Verification Code</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="./img/logo/LOGO.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="./img/verification-icon.png" alt="" />
+      </div>
+
+      <div class="body">
+        <h1>Enter Verification Code</h1>
+        <div class="verification__text-wrapper">
+          <p>we sent a six-digit code to</p>
+          <div class="verification__num-wrapper">
+            <div>
+              <span id="codeVerification">+44</span>
+              <span id="numVerifivation">0912345678</span>
+            </div>
+            <a href="./index.html">change number</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <form id="deleteAccountForm">
+          <div>
+            <label for="verifyNumber">Enter the code</label>
+            <div class="input-verification">
+              <input required maxlength="1" id="verifyNumber" type="text" />
+              <input required maxlength="1" type="text" />
+              <input required maxlength="1" type="text" />
+              <input required maxlength="1" type="text" />
+              <input required maxlength="1" type="text" />
+              <input required maxlength="1" type="text" />
+            </div>
+          </div>
+
+          <button id="verifyBtn">Verify</button>
+        </form>
+      </div>
+      <p class="verification__resend">
+        Resend Code (<span id="counterTimer"></span>s)
+      </p>
+      <a href="" class="resend-code"
+        ><img src="../img/reload-icon.svg" alt="" /> Resend Code</a
+      >
+    </div>
+    <script src="verification.js"></script>
+  </body>
+</html>
